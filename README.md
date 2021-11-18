@@ -1,5 +1,10 @@
 # Linkedin Web Extension
 
+> Adds a custom section in the Linkedin profiles
+
+<p align="center">
+<img width="655" src="https://user-images.githubusercontent.com/6775220/142335875-18fea440-c499-467b-884c-78154344c92b.png"><br/>
+</p>
 
 A [Vite](https://vitejs.dev/) powered WebExtension ([Chrome](https://developer.chrome.com/docs/extensions/reference/), [FireFox](https://addons.mozilla.org/en-US/developers/), etc.).
 
