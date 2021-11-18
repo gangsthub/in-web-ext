@@ -1,13 +1,13 @@
-import { dirname, relative } from 'path';
-import { defineConfig, UserConfig } from 'vite';
-import Vue from '@vitejs/plugin-vue';
-import Icons from 'unplugin-icons/dist/vite';
-import IconsResolver from 'unplugin-icons/dist/resolver';
-import Components from 'unplugin-vue-components/dist/vite';
-import AutoImport from 'unplugin-auto-import/dist/vite';
-import WindiCSS from 'vite-plugin-windicss';
-import windiConfig from './windi.config';
-import { r, port, isDev } from './scripts/utils';
+import { dirname, relative } from 'path'
+import { defineConfig, UserConfig } from 'vite'
+import Vue from '@vitejs/plugin-vue'
+import Icons from 'unplugin-icons/dist/vite'
+import IconsResolver from 'unplugin-icons/dist/resolver'
+import Components from 'unplugin-vue-components/dist/vite'
+import AutoImport from 'unplugin-auto-import/dist/vite'
+import WindiCSS from 'vite-plugin-windicss'
+import windiConfig from './windi.config'
+import { r, port, isDev } from './scripts/utils'
 
 export const sharedConfig: UserConfig = {
   root: r('src'),
@@ -56,8 +56,8 @@ export const sharedConfig: UserConfig = {
       transformIndexHtml(html, { path }) {
         return html.replace(
           /"\/assets\//g,
-          `"${relative(dirname(path), '/assets')}/`
-        );
+          `"${relative(dirname(path), '/assets')}/`,
+        )
       },
     },
   ],
@@ -65,7 +65,7 @@ export const sharedConfig: UserConfig = {
     include: ['vue', '@vueuse/core', 'webextension-polyfill'],
     exclude: ['vue-demi'],
   },
-};
+}
 
 export default defineConfig(({ command }) => ({
   ...sharedConfig,
@@ -100,4 +100,4 @@ export default defineConfig(({ command }) => ({
       config: windiConfig,
     }),
   ],
-}));
+}))

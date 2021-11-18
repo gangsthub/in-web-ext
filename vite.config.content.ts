@@ -14,6 +14,7 @@ export default defineConfig({
         include: [
           r('src/contentScripts/**/*'),
           r('src/components/**/*'),
+          r('src/composables/**/*'),
         ],
       }
       : undefined,
