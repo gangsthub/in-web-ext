@@ -39,3 +39,8 @@ And then pack files under `extension`, you can upload `extension.crx` or `extens
 ## Credits
 
 This project uses https://github.com/antfu/vitesse-webext as a boilerplate. All the magic comes from Anthony Fu.
+
+## ToDos
+
+- [ ] Refresh (refetch) on profile page change.
+- [ ] Enable when navigating from a non-profile page to a profile page, within LinkedIn.
